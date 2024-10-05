@@ -6,12 +6,16 @@
 		<node id="2" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="CSV File Import (1)" position="(297.0, 301.0)" />
 		<node id="3" name="Merge Data" qualified_name="Orange.widgets.data.owmergedata.OWMergeData" project_name="Orange3" version="" title="Merge Data" position="(445.0, 216.0)" />
 		<node id="4" name="Select Rows" qualified_name="Orange.widgets.data.owselectrows.OWSelectRows" project_name="Orange3" version="" title="Select Rows" position="(595.0, 216.0)" />
+		<node id="5" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Select Columns (1)" position="(745.0, 216.0)" />
+		<node id="6" name="Save Data" qualified_name="Orange.widgets.data.owsave.OWSave" project_name="Orange3" version="" title="Save Data" position="(895.0, 216.0)" />
 	</nodes>
 	<links>
 		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="1" source_node_id="1" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 		<link id="2" source_node_id="2" sink_node_id="3" source_channel="Data" sink_channel="Extra Data" enabled="true" source_channel_id="data" sink_channel_id="extra_data" />
 		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Matching Data" sink_channel="Data" enabled="true" source_channel_id="matching_data" sink_channel_id="data" />
+		<link id="5" source_node_id="5" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
 	</links>
 	<annotations />
 	<thumbnail />
@@ -48,6 +52,18 @@ c5R9lCiMCmNvbmRpdGlvbnOUXZQojAtDR19TdWJncm91cJRLAUsAXZSMAjZDlGF0lGFoCEsCdYwK
 YXR0cmlidXRlc5R9lCiMA2FnZZRLAYwGZ2VuZGVylEsBjAlldGhuaWNpdHmUSwGMCWZjaWRfY29k
 ZZRLAYwDY2dulEsBaBRLAXWMBW1ldGFzlH2UjAlGQ0lEX0Rlc2OUSwNzdWJhdS4=
 </properties>
+		<properties node_id="5" format="pickle">gASVDQIAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACaUAAACi
+AAAM2QAAAx4AAAmlAAAAxwAADNkAAAMeAAAAAAAAAAAHgAAACaUAAADHAAAM2QAAAx6UjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwLQ0dfU3ViZ3JvdXCUSwGGlIwJYXZhaWxhYmxllEsAhpSMA2NnbpRL
+AYaUaBVLAYaUjAlGQ0lEX0Rlc2OUSwOGlGgVSwKGlIwDYWdllEsBhpSMCWF0dHJpYnV0ZZRLAIaU
+jAZnZW5kZXKUSwGGlGgfSwGGlIwJZXRobmljaXR5lEsBhpRoH0sChpSMCWZjaWRfY29kZZRLAYaU
+aB9LA4aUdUr+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lChoHUsBaCFLAWgkSwFoJ0sBaBdLAWgT
+SwF1jAVtZXRhc5R9lGgaSwNzdWJhdS4=
+</properties>
+		<properties node_id="6" format="literal">{'add_type_annotations': False, 'auto_save': False, 'controlAreaVisible': True, 'filter': 'Comma-separated values (*.csv)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xfb\x00\x00\x01\x0f\x00\x00\x0c}\x00\x00\x01\xc7\x00\x00\n\xfb\x00\x00\x014\x00\x00\x0c}\x00\x00\x01\xc7\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xfb\x00\x00\x014\x00\x00\x0c}\x00\x00\x01\xc7', 'stored_name': 'intake-person-demo(beans).csv', 'stored_path': 'data/analysis/prepared', '__version__': 3}</properties>
 	</node_properties>
 	<session_state>
 		<window_groups />
