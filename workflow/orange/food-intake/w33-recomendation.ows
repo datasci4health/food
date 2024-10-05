@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Beans Food Intake - Demographics" position="(150, 150)" />
+		<node id="1" name="Select Columns" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" project_name="Orange3" version="" title="Define the Learning Target" position="(300, 150)" />
+		<node id="2" name="Logistic Regression" qualified_name="Orange.widgets.model.owlogisticregression.OWLogisticRegression" project_name="Orange3" version="" title="Logistic Regression" position="(468.7777777777778, 148.77777777777777)" />
+		<node id="3" name="Predictions" qualified_name="Orange.widgets.evaluate.owpredictions.OWPredictions" project_name="Orange3" version="" title="Predictions" position="(608.7777777777777, 369.4444444444443)" />
+		<node id="4" name="CSV File Import" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" project_name="Orange3" version="" title="Test" position="(458.77777777777766, 376.66666666666663)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="2" sink_node_id="3" source_channel="Model" sink_channel="Predictors" enabled="true" source_channel_id="model" sink_channel_id="predictors" />
+		<link id="2" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="4" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations>
+		<text id="0" type="text/markdown" rect="(713.8888888888888, 115.7777777777778, 150.0, 49.0)" font-family="Ubuntu" font-size="16"># Train</text>
+		<text id="1" type="text/markdown" rect="(724.4444444444446, 344.1111111111111, 150.0, 49.0)" font-family="Ubuntu" font-size="16"># Predict</text>
+		<arrow id="2" start="(712.2222222222224, 141.11111111111111)" end="(554.4444444444445, 141.11111111111111)" fill="#C1272D" />
+		<arrow id="3" start="(711.6666666666667, 368.33333333333337)" end="(646.1111111111111, 370.0)" fill="#C1272D" />
+		<text id="4" type="text/markdown" rect="(386.66666666666674, 432.4444444444444, 150.0, 69.0)" font-family="Ubuntu" font-size="16">* age = 30
+* gender = 1
+* ethnicity = 2</text>
+	</annotations>
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'data/analysis/prepared/intake-person-demo(beans).csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 4, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/food/workflow/orange/food-intake/data/analysis/prepared', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xb4\x00\x00\x00\xba\x00\x00\x0b\xff\x00\x00\x02"\x00\x00\n\xb4\x00\x00\x00\xdf\x00\x00\x0b\xff\x00\x00\x02"\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xb4\x00\x00\x00\xdf\x00\x00\x0b\xff\x00\x00\x02"', '__version__': 3}</properties>
+		<properties node_id="1" format="pickle">gASVvgEAAAAAAAB9lCiMC2F1dG9fY29tbWl0lIiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNpZ25v
+cmVfbmV3X2ZlYXR1cmVzlImME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACcwAAAGd
+AAANAAAABBkAAAnMAAABwgAADQAAAAQZAAAAAAAAAAAHgAAACcwAAAHCAAANAAAABBmUjBJ1c2Vf
+aW5wdXRfZmVhdHVyZXOUiYwLX192ZXJzaW9uX1+USwGMEGNvbnRleHRfc2V0dGluZ3OUXZSMFW9y
+YW5nZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMEWRvbWFp
+bl9yb2xlX2hpbnRzlH2UKIwDYWdllEsBhpSMCWF0dHJpYnV0ZZRLAIaUjAZnZW5kZXKUSwGGlGgV
+SwGGlIwJZXRobmljaXR5lEsBhpRoFUsChpSMCWZjaWRfY29kZZRLAYaUjAVjbGFzc5RLAIaUdUr+
+////hpRoB0sBdYwKYXR0cmlidXRlc5R9lChoE0sBaBdLAWgaSwFoHUsBdYwFbWV0YXOUfZR1YmF1
+Lg==
+</properties>
+		<properties node_id="2" format="literal">{'C_index': 61, 'auto_apply': True, 'class_weight': False, 'controlAreaVisible': True, 'learner_name': '', 'penalty_type': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\n\xb0\x00\x00\x01\\\x00\x00\x0b\xbb\x00\x00\x02\x8c\x00\x00\n\xb0\x00\x00\x01\\\x00\x00\x0b\xbb\x00\x00\x02\x8c\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80\x00\x00\n\xb0\x00\x00\x01\\\x00\x00\x0b\xbb\x00\x00\x02\x8c', '__version__': 2}</properties>
+		<properties node_id="3" format="pickle">gASVtAMAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAH5AAAA9gAAB1MAAAMcAAAB+QAAARsAAAdTAAADHAAAAAEAAAAAB4AAAAH5
+AAABGwAAB1MAAAMclIwJc2VsZWN0aW9ulF2UjAtzaG93X3Njb3Jlc5SIjAtzY29yZV90YWJsZZR9
+lIwQc2hvd19zY29yZV9oaW50c5R9lCiMBk1vZGVsX5SIjAZUcmFpbl+UiYwFVGVzdF+UiYwCQ0GU
+iIwXUHJlY2lzaW9uUmVjYWxsRlN1cHBvcnSUiIwLVGFyZ2V0U2NvcmWUiIwJUHJlY2lzaW9ulIiM
+BlJlY2FsbJSIjAJGMZSIjANBVUOUiIwHTG9nTG9zc5SJjAtTcGVjaWZpY2l0eZSJjBdNYXR0aGV3
+c0NvcnJDb2VmZmljaWVudJSIjANNU0WUiIwEUk1TRZSIjANNQUWUiIwETUFQRZSIjAJSMpSIjAZD
+VlJNU0WUiYwPQ2x1c3RlcmluZ1Njb3JllIiMClNpbGhvdWV0dGWUiIwXQWRqdXN0ZWRNdXR1YWxJ
+bmZvU2NvcmWUiHVzjAtfX3ZlcnNpb25fX5RLAowQY29udGV4dF9zZXR0aW5nc5RdlCiMFW9yYW5n
+ZXdpZGdldC5zZXR0aW5nc5SMB0NvbnRleHSUk5QpgZR9lCiMBnZhbHVlc5R9lCiMF3Nob3dfcHJv
+YmFiaWxpdHlfZXJyb3JzlIiMD3Nob3dfcmVnX2Vycm9yc5RLAYwLc2hvd25fcHJvYnOUSwCMDHRh
+cmdldF9jbGFzc5SMFihBdmVyYWdlIG92ZXIgY2xhc3NlcymUaAd9lGghSwJ1jAdjbGFzc2VzlCl1
+YmgmKYGUfZQoaCl9lChoK4hoLEsBaC1LAWgujBYoQXZlcmFnZSBvdmVyIGNsYXNzZXMplGgHfZRo
+IUsCdWgxKIwJNjAzMDMwMDAwlIwJNjAzMDMyMDAwlIwJNjAzMDM0MDAwlIwJNjAzMDM1MDAwlIwJ
+NjAzMDM2MDAwlIwJNjAzMDM4MDAwlIwJNjAzMDM5MDAwlIwJNjAzMDQwMDAwlIwJNjAzMDQxMDAw
+lIwJNjAzMDQyMDAwlIwJNjAzMDk4MDAwlIwJNjAzMDk4MDAxlIwJNjAzMTgyMDAwlIwJNjAzMjAz
+MDAwlIwJNjAzMjU2MDAwlIwJNjAzMjU2MDAxlIwJNjAzMjU4MDAwlHSUdWJldS4=
+</properties>
+		<properties node_id="4" format="literal">{'_session_items': [], '_session_items_v2': [({'type': 'VarPath', 'name': 'basedir', 'relpath': 'data/analysis/prepared/intake-person(beans)-test.csv'}, {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 3, 'value': 'Categorical'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'compatibility_mode': False, 'controlAreaVisible': True, 'dialog_state': {'directory': '/home/santanche/git/food/workflow/orange/food-intake/data/analysis/prepared', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x03\x1a\x00\x00\x01z\x00\x00\x04e\x00\x00\x02\xbd', '__version__': 3}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
